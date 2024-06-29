@@ -27,7 +27,7 @@ print(f"Your password is: {pwd}")
 pwd_list = []
 
 for char in range(1, nletters + 1):
-  pwd_list.append(random.choice(letters))
+  pwd_list += random.choice(letters)
 
 for char in range(1, nsymbols + 1):
   pwd_list += random.choice(symbols)
